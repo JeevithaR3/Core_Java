@@ -1,11 +1,8 @@
 package Array;
-
 import java.util.Scanner;
-
 public class rotatebyn {
     public static void main(String args[])
     {
-       
         Scanner in=new Scanner(System.in);
         System.out.println("Enter size of the array:");
         int n=in.nextInt();
@@ -18,7 +15,7 @@ public class rotatebyn {
         //rotation logic
         System.out.println("Enter the number of times to rotate:");
         int d=in.nextInt();
-        for(int j=0;j<d;j++)
+        for(int j=0;j<d%n;j++)    //if the no of times to rotate is more than n
         {
             int last=arr[n-1];
             for(int i=n-1;i>0;i--)
