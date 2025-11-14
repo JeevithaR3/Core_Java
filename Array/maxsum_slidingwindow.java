@@ -6,7 +6,7 @@ public class maxsum_slidingwindow {
     public static void main(String args[])
     {        
         Scanner in=new Scanner(System.in);
-        System.out.println("Enter the size fo array");
+        System.out.println("Enter the size of array");
         int n=in.nextInt();
         System.out.println("Enter the elements of array");
         int arr[]=new int[n];           
