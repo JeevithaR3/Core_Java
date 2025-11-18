@@ -21,3 +21,19 @@ public class arraylist {
     System.out.println("ArrayList after removal: "+list);
 }
 }
+
+/*to remove elements*/
+/*
+ * for(int i=0;i<list.size();i++)
+    {
+        if(list.get(i)>7)
+        {
+            list.remove(i);
+            i--;
+        }
+    }  //output is 1,2,3,4,5,6,7,9
+      why ?
+      because when u remove an element the size of the arraylist decreases
+      and the elements are shifted to left  (meaning the element which is deleted and in that place ,the next elements will be placed in that index
+      as it is dynamic collections)
+ */
